@@ -6,36 +6,36 @@ namespace Example2
     {
         static void Main(string[] args)
         {
-            int cift = 0;
-            int tek = 0;
+            int couple = 0;
+            int only = 0;
 
             for (int i = 1; i < 10; i++)
             {
-                Console.WriteLine(Messages.sayi1, i);
-                int sayi = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(Messages.number1, i);
+                int number = Convert.ToInt32(Console.ReadLine());
 
-                if (sayi % 2 == 0)
+                if (number % 2 == 0)
                 {
-                    cift++;
+                    couple++;
                 }
-                else if (sayi % 2 == 1)
+                else if (number % 2 == 1)
                 {
-                    tek++;
+                    only++;
                 }
 
                
             }
-            Console.WriteLine(Messages.cift1, cift);
-            Console.WriteLine(Messages.tek1, tek);
+            Console.WriteLine(Messages.couple1, couple);
+            Console.WriteLine(Messages.only1, only);
         }
     }
     public static class Messages
     {
-        public static string sayi1 = "{0}. sayiyi giriniz:";
+        public static string number1 = "{0}. enter number:";
 
-        public static string cift1 = "çift sayi: {0}";
+        public static string couple1 = "couple: {0}";
 
-        public static string tek1 = "tek  sayi: {0}";
+        public static string only1 = "only: {0}";
 
     }
 }
