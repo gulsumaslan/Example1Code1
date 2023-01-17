@@ -6,23 +6,23 @@ namespace Example4
     {
         static void Main(string[] args)
         {
-            int[] diziler = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
+            int[] series= { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
 
-            for (int i = 0; i <diziler.Length; i++)
+            for (int i = 0; i <series.Length; i++)
             {
-                if (diziler[i]%2==0)
+                if (series[i]%2==0)
                 {
-                    Console.WriteLine(diziler[i]);
+                    Console.WriteLine(series[i]);
                 }
             }
            
         }
 
-        static void deneme(int[] diziler)
+        static void example(int[] series)
         {
-            foreach (var dizi in diziler)
+            foreach (var soap in series)
             {
-                Console.WriteLine(dizi);
+                Console.WriteLine(soap);
             }
         }
     }
