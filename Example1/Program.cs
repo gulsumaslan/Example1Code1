@@ -6,23 +6,23 @@ namespace Example1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Messages.Ad);
+            Console.WriteLine(Messages.Name);
             string name = Console.ReadLine();
 
-            Console.WriteLine(Messages.Soyad);
+            Console.WriteLine(Messages.SurName);
             string LastName = Console.ReadLine();
 
 
-            Console.WriteLine(Messages.ekran, name, LastName);
+            Console.WriteLine(Messages.screen, name, LastName);
 
 
         }
     }
     public static class Messages
     {
-        public static string Ad = "Adınızı giriniz";
-        public static string Soyad = "Soyadınızı giriniz";
-        public static string ekran = "Merhaba {0},{1}:";
+        public static string Name= "enter your name";
+        public static string SurName = "Enter your last name";
+        public static string screen = "hello {0},{1}:";
 
 
 
