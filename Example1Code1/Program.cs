@@ -6,20 +6,20 @@ namespace Example1Code1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Messages.sicaklik);
-            double sicaklik = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(Messages.heat);
+            double heat = Convert.ToDouble(Console.ReadLine());
 
-            if (sicaklik<0)
+            if (heat<0)
             {
-                Console.WriteLine(Messages.kati);
+                Console.WriteLine(Messages.thick);
             }
-            else if (sicaklik>0 && sicaklik<100)
+            else if (heat>0 && heat<100)
             {
-                Console.WriteLine(Messages.sivi);
+                Console.WriteLine(Messages.lıquid);
             }
-            else if (sicaklik>=100)
+            else if (heat>=100)
             {
-                Console.WriteLine(Messages.gaz);
+                Console.WriteLine(Messages.gas);
             }
 
 
@@ -29,10 +29,10 @@ namespace Example1Code1
 
     public static class Messages
     {
-        public static string sicaklik = "Bir sıcaklık değeri giriniz";
-        public static string kati = "KAtı";
-        public static string sivi = "Sıvı";
-        public static string gaz= "Gaz";
+        public static string heat= "Enter a temperature value";
+        public static string  thick = "thick";
+        public static string liquid = "liquid";
+        public static string gas= "gas";
 
     }
 }
