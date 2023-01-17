@@ -6,27 +6,27 @@ namespace Example3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Messages.sayi1);
-            int sayi = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Messages.number1);
+            int number = Convert.ToInt32(Console.ReadLine());
 
-            bool tekcift = Kontrol(sayi);
+            bool singlecouple = Control(number);
 
-            if (tekcift==true)
+            if (singlecouple==true)
             {
-                Console.WriteLine(Messages.cift);
+                Console.WriteLine(Messages.couple);
             }
             else
             {
-                Console.WriteLine(Messages.tek);
+                Console.WriteLine(Messages.single);
             }
 
-            //Console.WriteLine(Kontrol(sayi));
+            //Console.WriteLine(Control(number));
 
         }
 
-          static bool Kontrol(int sayi)
+          static bool Control(int number)
         {
-            if (sayi%2==0)
+            if (number%2==0)
             {
                 return true;
             }
@@ -39,9 +39,9 @@ namespace Example3
 
     public static class Messages
     {
-        public static string sayi1 = "Bir sayi giriniz";
-        public static string cift = "Sayi Çifttir";
-        public static string tek = "Sayi Tektir";
+        public static string number1 = "Enter a number";
+        public static string couple = "Number is Even";
+        public static string single= "Number is odd";
 
 
     }
